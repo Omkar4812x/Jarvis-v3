@@ -1,22 +1,59 @@
-# Jarvis v3
+# ⚡ Jarvis v3 - Modular System Automation Assistant
 
-## 📌 Description
-Welcome to **Jarvis v3**! This project is part of the curated software workspace.
+> **Modular Python virtual assistant framework featuring automated window management, keyboard/mouse emulation, weather updates, file operations, and Google search integration.**
+
+---
+
+## ✨ Features
+
+- 🖥️ **Windows Desktop Window Controller** (`Jarvis_window_CTRL.py`)
+  - Manage active desktop windows, minimize/maximize applications, and switch focus.
+- ⌨️ **Keyboard & Mouse Automation** (`keyboard_mouse_CTRL.py`)
+  - Automated mouse click positioning, scroll wheel control, and keyboard typing via `pyautogui`.
+- 📁 **File System Manager** (`Jarvis_file_opner.py`)
+  - Open, search, and manage local files, scripts, and software applications.
+- 🌐 **Web Search & Weather Services** (`Jarvis_google_search.py`, `jarvis_get_whether.py`)
+  - Real-time Google Search queries and live weather updates.
+- 🧠 **Central Agent Orchestrator** (`agent.py`, `Jarvis_prompts.py`)
+  - Intelligent prompt routing connecting user intents to specific automation modules.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language**: Python 3.10+
+- **Automation & Control**: `pyautogui`, `psutil`, `pygetwindow`, `pynput`
+- **Networking & API**: Requests, BeautifulSoup4
+
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-Ensure you have the required runtime environment installed for this project:
-- **Node.js** (if applicable for web/frontend components)
-- **Python 3.10+** (if applicable for AI/voice scripts)
-- **Java JDK 17+** (if applicable for Java applications)
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Omkar4812x/Jarvis-v3.git
+   cd Jarvis-v3
+   ```
 
-### Installation & Execution
-1. Clone this repository to your local machine.
-2. Install dependencies:
-   - For Node.js projects: `npm install`
-   - For Python projects: `pip install -r requirements.txt` (or create a venv: `python -m venv venv`)
-3. Launch the application entry point.
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## 📄 License & Attribution
-Created and maintained as part of the Tech Hub projects collection.
+3. **Configure Environment Variables**:
+   Create a `.env` file in the root directory:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key_here
+   WEATHER_API_KEY=your_weather_api_key_here
+   ```
+
+4. **Run Jarvis v3**:
+   ```bash
+   python agent.py
+   ```
+
+---
+
+## 📄 License
+
+Distributed under the MIT License.
